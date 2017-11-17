@@ -1,0 +1,15 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /jd.css
+  static_files: jd.css
+  upload: jd.css
+
+- url: /jd.js
+  static_files: jd.js
+  upload: jd.css
+
+- url: /.*
+  script: main.app
